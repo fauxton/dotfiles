@@ -1,7 +1,7 @@
-thoughtbot dotfiles
+fauxton dotfiles
 ===================
 
-![prompt](http://images.thoughtbot.com/thoughtbot-dotfiles-prompt.png)
+![prompt](https://pbs.twimg.com/media/CacBjhjWcAAGHC-.png:med)
 
 Requirements
 ------------
@@ -15,7 +15,7 @@ Install
 
 Clone onto your laptop:
 
-    git clone git://github.com/thoughtbot/dotfiles.git
+    git clone git://github.com/fauxton/dotfiles.git
 
 (Or, [fork and keep your fork
 updated](http://robots.thoughtbot.com/keeping-a-github-fork-updated)).
@@ -158,10 +158,8 @@ What's in it?
   Rails file structure via `gf` and `:A` (alternate), `:Rextract` partials,
   `:Rinvert` migrations, etc.
 * Run [RSpec](https://www.relishapp.com/rspec) specs from vim.
-* Set `<leader>` to a single space.
-* Switch between the last two files with space-space.
-* Syntax highlighting for CoffeeScript, Textile, Cucumber, Haml, Markdown, and
-  HTML.
+* Set `<leader>` to a comma.
+* Syntax highlighting for Markdown and several other formats.
 * Use [Ag](https://github.com/ggreer/the_silver_searcher) instead of Grep when
   available.
 * Map `<leader>ct` to re-index [Exuberant Ctags](http://ctags.sourceforge.net/).
@@ -173,9 +171,7 @@ What's in it?
 configuration:
 
 * Improve color resolution.
-* Remove administrative debris (session name, hostname, time) in status bar.
-* Set prefix to `Ctrl+s`
-* Soften status bar color from harsh green to light gray.
+* Set prefix to `Ctrl+a`
 
 [git](http://git-scm.com/) configuration:
 
@@ -225,7 +221,7 @@ About thoughtbot
 
 ![thoughtbot](https://thoughtbot.com/logo.png)
 
-dotfiles is maintained and funded by thoughtbot, inc.
+The original dotfiles repo is maintained and funded by thoughtbot, inc.
 The names and logos for thoughtbot are trademarks of thoughtbot, inc.
 
 We love open source software!
