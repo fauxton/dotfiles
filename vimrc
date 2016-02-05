@@ -1,5 +1,7 @@
 " Leader
-let mapleader = " "
+let mapleader = ","
+
+colorscheme Tomorrow-Night-Eighties
 
 set backspace=2   " Backspace deletes like most programs in insert mode
 set nobackup
@@ -11,6 +13,9 @@ set showcmd       " display incomplete commands
 set incsearch     " do incremental searching
 set laststatus=2  " Always display the status line
 set autowrite     " Automatically :write before running commands
+set visualbell
+set hidden
+set shell=zsh
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
@@ -20,11 +25,6 @@ endif
 
 if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
-endif
-
-" Load matchit.vim, but only if the user hasn't installed a newer version.
-if !exists('g:loaded_matchit') && findfile('plugin/matchit.vim', &rtp) ==# ''
-  runtime! macros/matchit.vim
 endif
 
 filetype plugin indent on
@@ -41,7 +41,6 @@ augroup vimrcEx
     \ endif
 
   " Set syntax highlighting for specific file types
-  autocmd BufRead,BufNewFile Appraisals set filetype=ruby
   autocmd BufRead,BufNewFile *.md set filetype=markdown
   autocmd BufRead,BufNewFile .{jscs,jshint,eslint}rc set filetype=json
 augroup END
@@ -53,7 +52,7 @@ set shiftround
 set expandtab
 
 " Display extra whitespace
-set list listchars=tab:»·,trail:·,nbsp:·
+set list listchars=trail:·,nbsp:·
 
 " Use one space, not two, after punctuation.
 set nojoinspaces
@@ -72,9 +71,8 @@ endif
 
 " Make it obvious where 80 characters is
 set textwidth=80
-set colorcolumn=+1
 
-" Numbers
+" Show line numbers
 set number
 set numberwidth=5
 
@@ -93,14 +91,19 @@ endfunction
 inoremap <Tab> <c-r>=InsertTabWrapper()<cr>
 inoremap <S-Tab> <c-n>
 
-" Switch between the last two files
-nnoremap <leader><leader> <c-^>
-
 " Get off my lawn
 nnoremap <Left> :echoe "Use h"<CR>
 nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
+
+" vim tab navigation
+nnoremap th :tabfirst<CR>
+nnoremap tj :tabprev<CR>
+nnoremap tk :tabnext<CR>
+nnoremap tl :tablast<CR>
+nnoremap tc :tabclose<CR>
+nnoremap tn :tabnew<CR>
 
 " vim-rspec mappings
 nnoremap <Leader>t :call RunCurrentSpecFile()<CR>
@@ -128,6 +131,61 @@ let g:syntastic_check_on_open=1
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 let g:syntastic_eruby_ruby_quiet_messages =
     \ {"regex": "possibly useless use of a variable in void context"}
+
+" Better search behavior
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
+" Unhighlight search results
+map <Leader><space> :nohl<cr>
+
+" Don't scroll off the edge of the page
+set scrolloff=5
+
+" This uses Ack.vim to search for the word under the cursor
+nnoremap <leader><bs> :Ag! '\b<c-r><c-w>\b'<cr>
+
+" vp doesn't replace paste buffer
+function! RestoreRegister()
+let @" = s:restore_reg
+return ''
+endfunction
+function! s:Repl()
+let s:restore_reg = @"
+return "p@=RestoreRegister()\<cr>"
+endfunction
+vmap <silent> <expr> p <sid>Repl()
+
+" toggle quickfix with <Leader> c
+let g:toggle_list_no_mappings=1
+nmap <script> <silent> <Leader>c :call ToggleQuickfixList()<CR>
+
+" close windows with leader + q
+nnoremap <Leader>q :q<CR>
+
+" force close with leader + Q
+nnoremap <Leader>Q :q!<CR>
+
+" Save with leader + w
+nnoremap <Leader>w :w<CR>
+
+" Save and exit with leader + x
+nnoremap <Leader>x :x<CR>
+
+" format JSON with jq
+nnoremap <Leader>j :%!cat % <bar> jq '.'<CR>
+
+command! -nargs=0 -bar Qargs execute 'args' QuickfixFilenames()
+function! QuickfixFilenames()
+" Building a hash ensures we get each buffer only once
+let buffer_numbers = {}
+for quickfix_item in getqflist()
+  let buffer_numbers[quickfix_item['bufnr']] = bufname(quickfix_item['bufnr'])
+endfor
+return join(map(values(buffer_numbers), 'fnameescape(v:val)'))
+endfunction
 
 " Set spellfile to location that is guaranteed to exist, can be symlinked to
 " Dropbox or kept in Git and managed outside of thoughtbot/dotfiles using rcm.
