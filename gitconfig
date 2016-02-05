@@ -26,5 +26,5 @@
 [include]
   path = ~/.gitconfig.local
 [user]
-	name = Curtis Ekstrom
-	email = code@fauxton.io
+  name = Curtis Ekstrom
+  email = code@fauxton.io
