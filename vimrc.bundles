@@ -60,16 +60,16 @@ Plug 'Rykka/lastbuf.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'rking/ag.vim'
 Plug 'leshill/vim-json'
-Plug 'pangloss/vim-javascript'
+Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'tpope/vim-markdown'
-Plug 'tpope/vim-rails'
-Plug 'vim-ruby/vim-ruby'
-Plug 'jgdavey/vim-blockle'
-Plug 'jgdavey/vim-turbux'
-Plug 'jgdavey/vim-weefactor'
-Plug 'nelstrom/vim-textobj-rubyblock'
+Plug 'tpope/vim-rails', { 'for': 'ruby' }
+Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
+Plug 'jgdavey/vim-blockle', { 'for': 'ruby' }
+Plug 'jgdavey/vim-turbux', { 'for': 'ruby' }
+Plug 'jgdavey/vim-weefactor', { 'for': 'ruby' }
+Plug 'nelstrom/vim-textobj-rubyblock', { 'for': 'ruby' }
 Plug 'mustache/vim-mustache-handlebars'
-Plug 'elixir-lang/vim-elixir'
+Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }
 Plug 'ekalinin/Dockerfile.vim'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
