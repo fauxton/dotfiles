@@ -53,7 +53,6 @@ alias s="rspec"
 # JavaScript
 alias nom='rm -rf node_modules && npm cache clear && npm install'
 alias bom='rm -rf bower_components && bower cache clean && bower install'
-alias ember='bin/fig run rhine ember'
 alias et='ember test'
 alias ets='ember test --server'
 
@@ -61,6 +60,7 @@ alias ets='ember test --server'
 alias path='echo $PATH | tr -s ":" "\n"'
 
 # Other
+alias dotfiles="vim $HOME/code/sys/dotfiles"
 alias aliases="cat ~/.aliases"
 
 # Include custom aliases
