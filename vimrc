@@ -177,6 +177,17 @@ nnoremap <Leader>x :x<CR>
 " format JSON with jq
 nnoremap <Leader>j :%!cat % <bar> jq '.'<CR>
 
+" Tests mapping
+nmap <silent> <leader>T :TestNearest<CR>
+nmap <silent> <leader>t :TestFile<CR>
+nmap <silent> <leader>a :TestSuite<CR>
+nmap <silent> <leader>l :TestLast<CR>
+nmap <silent> <leader>g :TestVisit<CR>
+
+" make test commands execute using dispatch.vim
+let test#strategy = "dispatch"
+let g:test#preserve_screen = 1
+
 command! -nargs=0 -bar Qargs execute 'args' QuickfixFilenames()
 function! QuickfixFilenames()
 " Building a hash ensures we get each buffer only once

@@ -48,6 +48,7 @@ Plug 'vim-scripts/bufkill.vim'                            " unload, delete or wi
 Plug 'vim-scripts/bufexplorer.zip'                        " quickly and easily switch between buffers
 Plug 'jgdavey/tslime.vim'                                 " Send command from vim to a running tmux session
 Plug 'rondale-sc/vim-spacejam'                            " auto removing whitespace
+Plug 'janko-m/vim-test'                                   " A Vim wrapper for running tests on different granularities
 Plug 'tpope/vim-dispatch'                                 " asynchronous build and test dispatcher
 Plug 'milkypostman/vim-togglelist'                        " toggle quickfix and location lists
 Plug 'christoomey/vim-tmux-navigator'                     " Seamless navigation between tmux panes and vim splits
@@ -64,7 +65,6 @@ Plug 'tpope/vim-markdown'                                 " this too
 Plug 'tpope/vim-rails', { 'for': 'ruby' }                 " as is this, but gives you additional navigation commands for rails projects
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }               " configuration files for editing and compiling Ruby within Vim
 Plug 'jgdavey/vim-blockle', { 'for': 'ruby' }             " convert between do/end and {} for ruby
-Plug 'jgdavey/vim-turbux', { 'for': 'ruby' }              " Turbo Ruby testing with tmux
 Plug 'jgdavey/vim-weefactor', { 'for': 'ruby' }           " common refactors for ruby code
 Plug 'nelstrom/vim-textobj-rubyblock', { 'for': 'ruby' }  " ruby text objects (dar = delete around method)
 Plug 'mustache/vim-mustache-handlebars'                   " mustache and handlebars mode for vim
