@@ -65,6 +65,7 @@ export CODE_PATH="$HOME/code"
 alias dotfiles="cd $CODE_PATH/sys/dotfiles; vim ."
 alias oss="cd $CODE_PATH/oss && ll"
 alias apps="cd $CODE_PATH/apps && ll"
+alias work="cd $CODE_PATH/work && ll"
 alias aliases="cat ~/.aliases"
 
 # Include custom aliases
