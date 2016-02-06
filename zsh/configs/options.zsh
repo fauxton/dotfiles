@@ -1,7 +1,5 @@
-# WM config 
-# setopt appendhistory autocd extendedglob histignoredups nonomatch prompt_subst interactivecomments
-# awesome cd movements from zshkit
 setopt autocd autopushd pushdminus pushdsilent pushdtohome cdablevars
+setopt appendhistory histignoredups nonomatch prompt_subst interactivecomments
 DIRSTACKSIZE=5
 
 # Enable extended globbing
