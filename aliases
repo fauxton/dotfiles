@@ -62,6 +62,7 @@ alias path='echo $PATH | tr -s ":" "\n"'
 # Other
 alias dotfiles="cd $HOME/code/sys/dotfiles; vim ."
 alias oss="cd $HOME/code/oss && ll"
+alias apps="cd $HOME/code/apps && ll"
 alias aliases="cat ~/.aliases"
 
 # Include custom aliases
