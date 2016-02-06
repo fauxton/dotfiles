@@ -61,9 +61,10 @@ alias ets='ember test --server'
 alias path='echo $PATH | tr -s ":" "\n"'
 
 # Other
-alias dotfiles="cd $HOME/code/sys/dotfiles; vim ."
-alias oss="cd $HOME/code/oss && ll"
-alias apps="cd $HOME/code/apps && ll"
+export CODE_PATH="$HOME/code"
+alias dotfiles="cd $CODE_PATH/sys/dotfiles; vim ."
+alias oss="cd $CODE_PATH/oss && ll"
+alias apps="cd $CODE_PATH/apps && ll"
 alias aliases="cat ~/.aliases"
 
 # Include custom aliases
