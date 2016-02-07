@@ -58,7 +58,7 @@ Plug 'kana/vim-textobj-user'                              " create your own text
 Plug 'Rykka/lastbuf.vim'                                  " open last closed buffer
 Plug 'kien/ctrlp.vim'                                     " fancy fuzzy searching (configured to respect .gitignore)
 Plug 'rking/ag.vim'                                       " silver search the shit out of stuff
-Plug 'leshill/vim-json'                                   " A better JSON for Vim
+Plug 'leshill/vim-json', { 'for': 'json' }                " A better JSON for Vim
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }   " this is obvious
 Plug 'tpope/vim-markdown'                                 " this too
 Plug 'tpope/vim-rails', { 'for': 'ruby' }                 " as is this, but gives you additional navigation commands for rails projects
