@@ -60,7 +60,7 @@ Plug 'kien/ctrlp.vim'                                     " fancy fuzzy searchin
 Plug 'rking/ag.vim'                                       " silver search the shit out of stuff
 Plug 'leshill/vim-json', { 'for': 'json' }                " A better JSON for Vim
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }   " this is obvious
-Plug 'tpope/vim-markdown'                                 " this too
+Plug 'tpope/vim-markdown', { 'for': 'markdown' }          " this too
 Plug 'tpope/vim-rails', { 'for': 'ruby' }                 " as is this, but gives you additional navigation commands for rails projects
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }               " configuration files for editing and compiling Ruby within Vim
 Plug 'jgdavey/vim-blockle', { 'for': 'ruby' }             " convert between do/end and {} for ruby
@@ -68,7 +68,7 @@ Plug 'jgdavey/vim-weefactor', { 'for': 'ruby' }           " common refactors for
 Plug 'nelstrom/vim-textobj-rubyblock', { 'for': 'ruby' }  " ruby text objects (dar = delete around method)
 Plug 'mustache/vim-mustache-handlebars'                   " mustache and handlebars mode for vim
 Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }        " ELIXIR syntax highlighting and other stuff I'm sure
-Plug 'ekalinin/Dockerfile.vim'                            " Make editing Dockerfiles suck less
+Plug 'ekalinin/Dockerfile.vim', { 'for': 'Dockerfile' }   " Make editing Dockerfiles suck less
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
