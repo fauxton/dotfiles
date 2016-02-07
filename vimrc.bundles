@@ -46,7 +46,6 @@ Plug 'tpope/vim-unimpaired'                               " short normal mode al
 Plug 'tpope/vim-vinegar'                                  " lightweight file browsing improvements
 Plug 'vim-scripts/bufkill.vim'                            " unload, delete or wipe a buffer without closing the window or split
 Plug 'vim-scripts/bufexplorer.zip'                        " quickly and easily switch between buffers
-Plug 'jgdavey/tslime.vim'                                 " Send command from vim to a running tmux session
 Plug 'rondale-sc/vim-spacejam'                            " auto removing whitespace
 Plug 'janko-m/vim-test'                                   " A Vim wrapper for running tests on different granularities
 Plug 'tpope/vim-dispatch'                                 " asynchronous build and test dispatcher
