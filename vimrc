@@ -177,6 +177,9 @@ nnoremap <Leader>x :x<CR>
 " format JSON with jq
 nnoremap <Leader>j :%!cat % <bar> jq '.'<CR>
 
+" Suspend with leader + z
+nnoremap <Leader>z :suspend<CR>
+
 " Tests mapping
 nmap <silent> <leader>T :TestNearest<CR>
 nmap <silent> <leader>t :TestFile<CR>
