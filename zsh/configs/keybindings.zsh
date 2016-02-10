@@ -11,3 +11,17 @@ bindkey "^P" history-search-backward
 bindkey "^Y" accept-and-hold
 bindkey "^N" insert-last-word
 bindkey -s "^T" "^[Isudo ^[A" # "t" for "toughguy"
+
+# consistent suspend/fg behavior with vim
+# modified slightly from sheerun/dotfiles
+fancy-fg() {
+  if [[ $#BUFFER -eq 0 ]]; then
+    BUFFER="fg"
+    zle accept-line
+  else
+    zle push-input
+    zle clear-screen
+  fi
+}
+zle -N fancy-fg
+bindkey ',z' fancy-fg
