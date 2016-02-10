@@ -24,4 +24,12 @@ fancy-fg() {
   fi
 }
 zle -N fancy-fg
+
+consistent-exit() {
+  BUFFER="exit"
+  zle accept-line
+}
+zle -N consistent-exit
+
 bindkey ',z' fancy-fg
+bindkey ',q' consistent-exit
