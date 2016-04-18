@@ -51,6 +51,9 @@ set shiftwidth=2
 set shiftround
 set expandtab
 
+" Disable folding
+set nofoldenable
+
 " Display extra whitespace
 set list listchars=trail:·,nbsp:·
 
