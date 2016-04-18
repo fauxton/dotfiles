@@ -44,6 +44,7 @@ alias gra='git rebase --abort'
 alias gcp='git cherry-pick'
 alias reset-authors='git commit --amend --reset-author -C HEAD'
 alias wip="gc -m 'WIP'"
+alias grebase="git fetch origin master && git rebase origin/master"
 
 # Bundler
 alias b="bundle"
