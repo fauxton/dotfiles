@@ -74,7 +74,7 @@ export SYS_CODE_PATH="$CODE_PATH/sys"
 alias dotfiles="cd $CODE_PATH/sys/dotfiles; vim ."
 alias oss="cd $CODE_PATH/oss && ll"
 alias apps="cd $CODE_PATH/apps && ll"
-alias work="cd $CODE_PATH/work && ll"
+alias work="cd $CODE_PATH/Travis && ll"
 alias cron="cd $SYS_CODE_PATH/cron && ll"
 alias aliases="cat ~/.aliases"
 
