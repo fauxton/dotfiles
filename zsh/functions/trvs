@@ -1,0 +1,5 @@
+# invoke the trvs binary when running this function
+
+function trvs() {
+  /Users/curtisekstrom/code/Travis/trvs/bin/trvs "$@"
+}

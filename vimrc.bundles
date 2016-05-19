@@ -39,6 +39,7 @@ Plug 'tpope/vim-commentary'                               " comment stuff out
 Plug 'tpope/vim-endwise'                                  " add end automatically for ruby and similar constructs for other languages
 Plug 'tpope/vim-eunuch'                                   " Vim sugar for the UNIX shell commands that need it the most
 Plug 'tpope/vim-fugitive'                                 " a Git wrapper so awesome, it should be illegal
+Plug 'tpope/vim-rhubarb'                                  " Github extension for fugitive
 Plug 'tpope/vim-git'                                      " Vim git runtime files
 Plug 'tpope/vim-ragtag'                                   " mappings for HTML, XML, PHP, ASP, eRuby, JSP, and more
 Plug 'tpope/vim-repeat'                                   " enable repeating supported plugin maps with '.'
