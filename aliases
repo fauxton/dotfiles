@@ -46,13 +46,6 @@ alias reset-authors='git commit --amend --reset-author -C HEAD'
 alias wip="gc -m 'WIP'"
 alias grebase="git fetch origin master && git rebase origin/master"
 
-# Bundler
-alias b="bundle"
-
-# Rails
-alias migrate="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
-alias s="rspec"
-
 # JavaScript
 alias nom='rm -rf node_modules && npm cache clear && npm install'
 alias bom='rm -rf bower_components && bower cache clean && bower install'
