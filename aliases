@@ -11,8 +11,7 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias psg='ps aux | grep'
 alias h='history'
-alias vi='vim'
-alias e='vim'
+alias vi='nvim'
 alias e="$EDITOR"
 alias v="$VISUAL"
 
