@@ -32,7 +32,6 @@ Plug 'duff/vim-bufonly'                                   " unload all buffers b
 Plug 'ervandew/supertab'                                  " use <Tab> for all your insert completion needs
 Plug 'SirVer/ultisnips'                                   " Snippets engine
 Plug 'honza/vim-snippets'                                 " Snippets for several languages
-Plug 'Valloric/YouCompleteMe'                             " Code completion engine for vim
 Plug 'godlygeek/tabular'                                  " text filtering and alignment
 Plug 'tpope/vim-abolish'                                  " search for, substitute, and abbreviate multiple variants of a word
 Plug 'tpope/vim-commentary'                               " comment stuff out
