@@ -51,6 +51,12 @@ alias bom='rm -rf bower_components && bower cache clean && bower install'
 alias es='ember server'
 alias et='ember test'
 alias ets='ember test --server'
+alias esl='eslint'
+
+# Elixir
+alias mdg='mix deps.get'
+alias mps='mix phoenix.server'
+alias mt='mix test'
 
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'
@@ -63,10 +69,12 @@ alias shots="cd ~/Screenshots"
 # Code paths
 export CODE_PATH="$HOME/code"
 export SYS_CODE_PATH="$CODE_PATH/sys"
+export WORK_CODE_PATH="$CODE_PATH/Travis"
 alias dotfiles="cd $CODE_PATH/sys/dotfiles; vim ."
 alias oss="cd $CODE_PATH/oss && ll"
 alias apps="cd $CODE_PATH/apps && ll"
-alias work="cd $CODE_PATH/Travis && ll"
+alias work="cd $WORK_CODE_PATH && ll"
+alias web="cd $WORK_CODE_PATH/travis-web && ll"
 alias cron="cd $SYS_CODE_PATH/cron && ll"
 alias aliases="cat ~/.aliases"
 
