@@ -75,6 +75,7 @@ Plug 'jgdavey/vim-weefactor', { 'for': 'ruby' }             " common refactors f
 Plug 'nelstrom/vim-textobj-rubyblock', { 'for': 'ruby' }    " ruby text objects (dar = delete around method)
 Plug 'mustache/vim-mustache-handlebars'                     " mustache and handlebars mode for vim
 Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }          " ELIXIR syntax highlighting and other stuff I'm sure
+Plug 'archSeer/elixir.nvim', { 'for': 'elixir' }            " NVim enhancements to default elixir plugin
 Plug 'ekalinin/Dockerfile.vim', { 'for': 'Dockerfile' }     " Make editing Dockerfiles suck less
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') } " Autocomplete for neovim
 
