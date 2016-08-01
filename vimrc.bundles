@@ -34,8 +34,6 @@ call plug#begin('~/.vim/bundle')
 Plug 'AndrewRadev/splitjoin.vim'                            " switching between a single-line statement and a multi-line one
 Plug 'duff/vim-bufonly'                                     " unload all buffers but the current one
 Plug 'ervandew/supertab'                                    " use <Tab> for all your insert completion needs
-Plug 'SirVer/ultisnips'                                     " Snippets engine
-Plug 'honza/vim-snippets'                                   " Snippets for several languages
 Plug 'godlygeek/tabular'                                    " text filtering and alignment
 Plug 'tpope/vim-abolish'                                    " search for, substitute, and abbreviate multiple variants of a word
 Plug 'tpope/vim-commentary'                                 " comment stuff out
