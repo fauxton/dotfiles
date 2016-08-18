@@ -6,6 +6,9 @@ if command -v rbenv >/dev/null; then
   eval "$(rbenv init - --no-rehash)"
 fi
 
+# Add .local to path
+PATH="$HOME/.local/bin:$PATH"
+
 # mkdir .git/safe in the root of repositories you trust
 PATH=".git/safe/../../bin:$PATH"
 
