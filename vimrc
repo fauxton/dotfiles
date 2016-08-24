@@ -57,7 +57,7 @@ set expandtab
 set nofoldenable
 
 " Display extra whitespace
-set list listchars=trail:·,nbsp:·
+set listchars=tab:\ \ ,eol:\ ,trail:·
 
 " Use one space, not two, after punctuation.
 set nojoinspaces
