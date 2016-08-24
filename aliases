@@ -48,6 +48,7 @@ alias grebase="git fetch origin master && git rebase origin/master"
 # JavaScript
 alias nom='rm -rf node_modules && npm cache clear && npm install'
 alias bom='rm -rf bower_components && bower cache clean && bower install'
+alias bi='bower install'
 alias es='ember server'
 alias et='ember test'
 alias ets='ember test --server'
