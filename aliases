@@ -71,14 +71,20 @@ alias shots="cd ~/Screenshots"
 export CODE_PATH="$HOME/code"
 export SYS_CODE_PATH="$CODE_PATH/sys"
 export WORK_CODE_PATH="$CODE_PATH/Travis"
+export APP_CODE_PATH="$CODE_PATH/apps"
 alias sandbox="cd $CODE_PATH/sandbox && ll"
 alias dotfiles="cd $CODE_PATH/sys/dotfiles; vim ."
 alias oss="cd $CODE_PATH/oss && ll"
-alias apps="cd $CODE_PATH/apps && ll"
+alias apps="cd $APP_CODE_PATH/apps && ll"
 alias work="cd $WORK_CODE_PATH && ll"
 alias web="cd $WORK_CODE_PATH/travis-web && ll"
+alias p="cd $APP_CODE_PATH/web/prioriti"
+alias papi="cd $APP_CODE_PATH/api/prioriti_api"
 alias cron="cd $SYS_CODE_PATH/cron && ll"
 alias aliases="cat ~/.aliases"
+
+# Common typos
+alias mdkir="mkdir -p"
 
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local
