@@ -86,6 +86,9 @@ set textwidth=80
 set number
 set numberwidth=5
 
+" Toggle line numbers (useful when doing system copy)
+:nmap <C-N><C-N> :set invnumber<CR>
+
 " Tab completion
 " will insert tab at beginning of line,
 " will use completion if not at beginning
