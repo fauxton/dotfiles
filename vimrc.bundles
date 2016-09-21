@@ -29,7 +29,7 @@ Plug 'tpope/vim-unimpaired'                                 " short normal mode 
 Plug 'tpope/vim-vinegar'                                    " lightweight file browsing improvements
 Plug 'vim-scripts/bufkill.vim'                              " unload, delete or wipe a buffer without closing the window or split
 Plug 'vim-scripts/bufexplorer.zip'                          " quickly and easily switch between buffers
-Plug 'rondale-sc/vim-spacejam'                              " auto removing whitespace
+Plug 'derekprior/vim-trimmer'                               " auto removing whitespace
 Plug 'janko-m/vim-test'                                     " A Vim wrapper for running tests on different granularities
 Plug 'tpope/vim-dispatch'                                   " asynchronous build and test dispatcher
 Plug 'milkypostman/vim-togglelist'                          " toggle quickfix and location lists
