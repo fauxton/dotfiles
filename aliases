@@ -83,6 +83,8 @@ alias papi="cd $APP_CODE_PATH/api/prioriti_api"
 alias cron="cd $SYS_CODE_PATH/cron && ll"
 alias aliases="cat ~/.aliases"
 
+alias laptop="cd $SYS_CODE_PATH/laptop && $EDITOR mac"
+
 # Common typos
 alias mdkir="mkdir -p"
 
