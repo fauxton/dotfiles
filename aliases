@@ -36,6 +36,7 @@ alias glod='git log --graph --pretty="%Cgreen%h%Creset%Cblue%d%Creset %Cred%an%C
 alias gp='git push'
 alias gpr='git pull --rebase'
 alias gst='git status'
+alias gs='git show'
 alias gr='git rebase'
 alias grc='git rebase --continue'
 alias gri='git rebase --interactive'
