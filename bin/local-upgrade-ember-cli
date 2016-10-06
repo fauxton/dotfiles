@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# upgrade local ember-cil to version passed
+rm -rf node_modules bower_components dist tmp
+npm install "ember-cli@$1" --save-dev
+echo "Installing packages..."
+npm install
+bower install
+ember init

@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# upgrade global ember-cli to version passed
+echo "Removing current version of Ember-CLI"
+npm uninstall -g ember-cli
+npm cache clean
+bower cache clean
+echo "Installing Ember-CLI $1..."
+npm install -g "ember-cli@$1"
+local-upgrade-ember-cli $*
