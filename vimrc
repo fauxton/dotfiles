@@ -18,6 +18,7 @@ set autowrite     " Automatically :write before running commands
 set visualbell
 set hidden
 set shell=zsh
+set clipboard=unnamed
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
