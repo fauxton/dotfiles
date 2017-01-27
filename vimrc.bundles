@@ -27,6 +27,8 @@ Plug 'tpope/vim-sensible'                                   " sensible vim defau
 Plug 'tpope/vim-surround'                                   " quoting/parenthesizing made simple
 Plug 'tpope/vim-unimpaired'                                 " short normal mode aliases for commonly used ex commands, e.g. ]q is :cnext
 Plug 'tpope/vim-vinegar'                                    " lightweight file browsing improvements
+Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }                 " configuration files for editing and compiling Ruby within vim
+Plug 'nelstrom/vim-textobj-rubyblock', { 'for': 'ruby' }    " ruby text objects (dar = delete around ruby block)
 Plug 'vim-scripts/bufkill.vim'                              " unload, delete or wipe a buffer without closing the window or split
 Plug 'vim-scripts/bufexplorer.zip'                          " quickly and easily switch between buffers
 Plug 'derekprior/vim-trimmer'                               " auto removing whitespace
