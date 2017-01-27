@@ -41,7 +41,7 @@ Plug 'vim-scripts/IndexedSearch'                            " show number of mat
 Plug 'goldfeld/vim-seek'                                    " like f but for two characters. makes searching longer lines easier
 Plug 'kana/vim-textobj-user'                                " create your own text objects without pain (e.g. define what a ruby block is)
 Plug 'Rykka/lastbuf.vim'                                    " open last closed buffer
-Plug 'kien/ctrlp.vim'                                       " fancy fuzzy searching (configured to respect .gitignore)
+Plug 'ctrlpvim/ctrlp.vim'                                   " fancy fuzzy searching (configured to respect .gitignore)
 Plug 'rking/ag.vim'                                         " silver search the shit out of stuff
 Plug 'leshill/vim-json', { 'for': 'json' }                  " A better JSON for Vim
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }     " this is obvious
