@@ -1,7 +1,7 @@
 " Leader
 let mapleader = ","
 
-colorscheme Tomorrow-Night-Eighties
+colorscheme breezy
 
 set timeoutlen=1000 ttimeoutlen=0 " Make ESC more responsive
 
