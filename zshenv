@@ -1,5 +1,9 @@
 local _old_path="$PATH"
 
+# set up keyboard remapping
+setxkbmap -option 'caps:ctrl_modifier'
+xcape -e 'Caps_Lock=Escape'
+
 # Local config
 [[ -f ~/.zshenv.local ]] && source ~/.zshenv.local
 
