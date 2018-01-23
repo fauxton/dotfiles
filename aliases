@@ -80,7 +80,7 @@ alias shots="cd ~/Screenshots"
 # Code paths
 export CODE_PATH="$HOME/code"
 export SYS_CODE_PATH="$CODE_PATH/sys"
-export WORK_CODE_PATH="$CODE_PATH/Travis"
+export WORK_CODE_PATH="$CODE_PATH/work"
 export APP_CODE_PATH="$CODE_PATH/apps"
 alias sandbox="cd $CODE_PATH/sandbox && ll"
 alias dotfiles="cd $SYS_CODE_PATH/dotfiles; $EDITOR ."
