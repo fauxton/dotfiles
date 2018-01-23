@@ -12,8 +12,6 @@ call plug#begin('~/.vim/bundle')
 Plug 'AndrewRadev/ember_tools.vim', { 'for': 'javascript' } " Some nice `gf` functionality for Ember projects
 Plug 'AndrewRadev/splitjoin.vim'                            " switching between a single-line statement and a multi-line one
 Plug 'Rykka/lastbuf.vim'                                    " open last closed buffer
-Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') } " Autocomplete for neovim
-Plug 'archSeer/elixir.nvim', { 'for': 'elixir' }            " NVim enhancements to default elixir plugin
 Plug 'christoomey/vim-tmux-navigator'                       " Seamless navigation between tmux panes and vim splits
 Plug 'ctrlpvim/ctrlp.vim'                                   " fancy fuzzy searching (configured to respect .gitignore)
 Plug 'derekprior/vim-trimmer'                               " auto removing whitespace
