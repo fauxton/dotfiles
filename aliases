@@ -69,6 +69,10 @@ alias mdg='mix deps.get'
 alias mps='mix phoenix.server'
 alias mt='mix test'
 
+# Ruby
+alias be='bundle exec'
+alias ber='bundle exec rake'
+
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'
 
