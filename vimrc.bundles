@@ -22,6 +22,7 @@ Plug 'janko-m/vim-test'                                          " A Vim wrapper
 Plug 'kana/vim-textobj-user'                                     " create your own text objects without pain (e.g. define what a ruby block is)
 Plug 'milkypostman/vim-togglelist'                               " toggle quickfix and location lists
 Plug 'rking/ag.vim'                                              " silver search the shit out of stuff
+Plug 'sirver/ultisnips'                                          " Add snippets for many languages
 Plug 'scrooloose/syntastic'                                      " show syntax errors in many languages
 Plug 'tpope/vim-abolish'                                         " search for, substitute, and abbreviate multiple variants of a word
 Plug 'tpope/vim-commentary'                                      " comment stuff out
