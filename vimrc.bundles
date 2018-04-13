@@ -18,6 +18,7 @@ Plug 'duff/vim-bufonly'                                          " unload all bu
 Plug 'ervandew/supertab'                                         " use <Tab> for all your insert completion needs
 Plug 'godlygeek/tabular'                                         " text filtering and alignment
 Plug 'goldfeld/vim-seek'                                         " like f but for two characters. makes searching longer lines easier
+Plug 'honza/vim-snippets'                                        " Snippets are separated from the engine. Add this if you want them:
 Plug 'janko-m/vim-test'                                          " A Vim wrapper for running tests on different granularities
 Plug 'kana/vim-textobj-user'                                     " create your own text objects without pain (e.g. define what a ruby block is)
 Plug 'milkypostman/vim-togglelist'                               " toggle quickfix and location lists
