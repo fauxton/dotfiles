@@ -8,48 +8,56 @@ endfunction
 
 call plug#begin('~/.vim/bundle')
 
-" Define bundles via Github repos
-Plug 'AndrewRadev/ember_tools.vim', { 'for': 'javascript' } " Some nice `gf` functionality for Ember projects
-Plug 'AndrewRadev/splitjoin.vim'                            " switching between a single-line statement and a multi-line one
-Plug 'Rykka/lastbuf.vim'                                    " open last closed buffer
-Plug 'christoomey/vim-tmux-navigator'                       " Seamless navigation between tmux panes and vim splits
-Plug 'ctrlpvim/ctrlp.vim'                                   " fancy fuzzy searching (configured to respect .gitignore)
-Plug 'derekprior/vim-trimmer'                               " auto removing whitespace
-Plug 'duff/vim-bufonly'                                     " unload all buffers but the current one
-Plug 'ekalinin/Dockerfile.vim', { 'for': 'Dockerfile' }     " Make editing Dockerfiles suck less
-Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }          " ELIXIR syntax highlighting and other stuff I'm sure
-Plug 'ervandew/supertab'                                    " use <Tab> for all your insert completion needs
-Plug 'godlygeek/tabular'                                    " text filtering and alignment
-Plug 'goldfeld/vim-seek'                                    " like f but for two characters. makes searching longer lines easier
-Plug 'janko-m/vim-test'                                     " A Vim wrapper for running tests on different granularities
-Plug 'kana/vim-textobj-user'                                " create your own text objects without pain (e.g. define what a ruby block is)
-Plug 'leshill/vim-json', { 'for': 'json' }                  " A better JSON for Vim
-Plug 'milkypostman/vim-togglelist'                          " toggle quickfix and location lists
-Plug 'mustache/vim-mustache-handlebars'                     " mustache and handlebars mode for vim
-Plug 'nelstrom/vim-textobj-rubyblock', { 'for': 'ruby' }    " ruby text objects (dar = delete around ruby block)
-Plug 'pangloss/vim-javascript', { 'for': 'javascript' }     " this is obvious
-Plug 'rking/ag.vim'                                         " silver search the shit out of stuff
-Plug 'scrooloose/syntastic'                                 " show syntax errors in many languages
-Plug 'tpope/vim-abolish'                                    " search for, substitute, and abbreviate multiple variants of a word
-Plug 'tpope/vim-commentary'                                 " comment stuff out
-Plug 'tpope/vim-dispatch'                                   " asynchronous build and test dispatcher
-Plug 'tpope/vim-endwise'                                    " add end automatically for ruby and similar constructs for other languages
-Plug 'tpope/vim-eunuch'                                     " Vim sugar for the UNIX shell commands that need it the most
-Plug 'tpope/vim-fugitive'                                   " a Git wrapper so awesome, it should be illegal
-Plug 'tpope/vim-git'                                        " Vim git runtime files
-Plug 'tpope/vim-markdown', { 'for': 'markdown' }            " this too
-Plug 'tpope/vim-ragtag'                                     " mappings for HTML, XML, PHP, ASP, eRuby, JSP, and more
-Plug 'tpope/vim-repeat'                                     " enable repeating supported plugin maps with '.'
-Plug 'tpope/vim-rhubarb'                                    " Github extension for fugitive
-Plug 'tpope/vim-rsi'                                        " Readline key bindings
-Plug 'tpope/vim-sensible'                                   " sensible vim defaults
-Plug 'tpope/vim-surround'                                   " quoting/parenthesizing made simple
-Plug 'tpope/vim-unimpaired'                                 " short normal mode aliases for commonly used ex commands, e.g. ]q is :cnext
-Plug 'tpope/vim-vinegar'                                    " lightweight file browsing improvements
-Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }                 " configuration files for editing and compiling Ruby within vim
-Plug 'vim-scripts/IndexedSearch'                            " show number of matches for given search (and which you are currently on)
-Plug 'vim-scripts/bufexplorer.zip'                          " quickly and easily switch between buffers
-Plug 'vim-scripts/bufkill.vim'                              " unload, delete or wipe a buffer without closing the window or split
+" GENERIC BUNDLES
+Plug 'AndrewRadev/splitjoin.vim'                                 " switching between a single-line statement and a multi-line one
+Plug 'Rykka/lastbuf.vim'                                         " open last closed buffer
+Plug 'christoomey/vim-tmux-navigator'                            " Seamless navigation between tmux panes and vim splits
+Plug 'ctrlpvim/ctrlp.vim'                                        " fancy fuzzy searching (configured to respect .gitignore)
+Plug 'derekprior/vim-trimmer'                                    " auto removing whitespace
+Plug 'duff/vim-bufonly'                                          " unload all buffers but the current one
+Plug 'ervandew/supertab'                                         " use <Tab> for all your insert completion needs
+Plug 'godlygeek/tabular'                                         " text filtering and alignment
+Plug 'goldfeld/vim-seek'                                         " like f but for two characters. makes searching longer lines easier
+Plug 'janko-m/vim-test'                                          " A Vim wrapper for running tests on different granularities
+Plug 'kana/vim-textobj-user'                                     " create your own text objects without pain (e.g. define what a ruby block is)
+Plug 'milkypostman/vim-togglelist'                               " toggle quickfix and location lists
+Plug 'rking/ag.vim'                                              " silver search the shit out of stuff
+Plug 'scrooloose/syntastic'                                      " show syntax errors in many languages
+Plug 'tpope/vim-abolish'                                         " search for, substitute, and abbreviate multiple variants of a word
+Plug 'tpope/vim-commentary'                                      " comment stuff out
+Plug 'tpope/vim-dispatch'                                        " asynchronous build and test dispatcher
+Plug 'tpope/vim-endwise'                                         " add end automatically for ruby and similar constructs for other languages
+Plug 'tpope/vim-eunuch'                                          " Vim sugar for the UNIX shell commands that need it the most
+Plug 'tpope/vim-fugitive'                                        " a Git wrapper so awesome, it should be illegal
+Plug 'tpope/vim-git'                                             " Vim git runtime files
+Plug 'tpope/vim-ragtag'                                          " mappings for HTML, XML, PHP, ASP, eRuby, JSP, and more
+Plug 'tpope/vim-repeat'                                          " enable repeating supported plugin maps with '.'
+Plug 'tpope/vim-rhubarb'                                         " Github extension for fugitive
+Plug 'tpope/vim-rsi'                                             " Readline key bindings
+Plug 'tpope/vim-sensible'                                        " sensible vim defaults
+Plug 'tpope/vim-surround'                                        " quoting/parenthesizing made simple
+Plug 'tpope/vim-unimpaired'                                      " short normal mode aliases for commonly used ex commands, e.g. ]q is :cnext
+Plug 'tpope/vim-vinegar'                                         " lightweight file browsing improvements
+Plug 'vim-scripts/IndexedSearch'                                 " show number of matches for given search (and which you are currently on)
+Plug 'vim-scripts/bufexplorer.zip'                               " quickly and easily switch between buffers
+Plug 'vim-scripts/bufkill.vim'                                   " unload, delete or wipe a buffer without closing the window or split
+
+" RUBY BUNDLES
+Plug 'nelstrom/vim-textobj-rubyblock', { 'for': 'ruby' }         " ruby text objects (dar = delete around ruby block)
+Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }                      " configuration files for editing and compiling Ruby within vim
+
+" ELIXIR BUNDLES
+Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }               " ELIXIR syntax highlighting and other stuff I'm sure
+
+" JAVASCRIPT BUNDLES
+Plug 'AndrewRadev/ember_tools.vim', { 'for': 'javascript' }      " Some nice `gf` functionality for Ember projects
+Plug 'leshill/vim-json', { 'for': 'json' }                       " A better JSON for Vim
+Plug 'mustache/vim-mustache-handlebars', { 'for': 'javascript' } " mustache and handlebars mode for vim
+Plug 'pangloss/vim-javascript', { 'for': 'javascript' }          " this is obvious
+
+" OTHER BUNDLES
+Plug 'tpope/vim-markdown', { 'for': 'markdown' }                 " this too
+Plug 'ekalinin/Dockerfile.vim', { 'for': 'Dockerfile' }          " Make editing Dockerfiles suck less
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
