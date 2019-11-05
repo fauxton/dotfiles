@@ -1,0 +1,7 @@
+os: osx
+addons:
+  homebrew:
+    taps: thoughtbot/formulae
+    packages:
+    - rcm
+script: echo "This should pass."
