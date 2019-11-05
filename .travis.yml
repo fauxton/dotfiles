@@ -4,4 +4,4 @@ addons:
     taps: thoughtbot/formulae
     packages:
     - rcm
-script: echo "This should pass."
+script: echo "This should (eventually) pass."
